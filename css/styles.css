@@ -1,0 +1,72 @@
+.shape {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    border: 0.15em solid #D4AF37cc;
+    margin: 5%;
+    padding: 2%;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #0D0B08 42%, #C4C0C0 42%);
+}
+
+.shapeTitle {
+    border: 0.05em solid #D4AF37cc;
+    margin: 5%;
+    padding: 2%;
+    border-radius: 20px;
+    background-color:#0D0B08;
+}
+h2{
+    font-family: "Space Grotesk", sans-serif;
+    font-style: normal;
+    color: #B8924F;
+}
+p {
+    color:#E8E6E3;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+}
+h1 {
+    font-family: "Russo One", sans-serif;
+    font-style: normal;
+    color: #D4AF37;
+    text-align:center;
+    font-size: 3rem;
+}
+
+label {
+    color:#E8E6E3;
+    margin: 1%;
+}
+
+input {
+    border-radius: 100px;
+    border: 0.15em solid #D4AF37cc;
+    padding: 1%;
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+textarea{
+    border-radius: 20px;
+    border: 0.15em solid #D4AF37cc;
+    padding: 1%;
+    width: 100%;
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+.bouton {
+    border-radius: 10px;
+    border: 0.15em solid #D4AF37;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:#D4AF37;
+    opacity: 70%;
+    font-size: 1rem;
+}
+
+.bouton:hover {
+  opacity: 100%;
+  transition: opacity 0.3s ease;
+}

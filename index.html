@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>The-Tarnished-Archives</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Russo+One&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="shapeTitle">Contact</h1>
+    <div class="shape">
+        <form id="form" action="mailto:seaurchin503@emailhub.kr?content-type=text/html&amp;subject=Site%20Web"
+            method="post" enctype="text/plain">
+            <h2> Nous contacté </h2>
+            <p> Si vous souhaitez nous faire part de votre avis ou nous contacté, veuillez remplir le formulaire
+                ci-dessous</p>
+            <p>
+                <label for="nom">Nom: </label><input id="nom" type="text" name="nom" value="" required>
+                <label for="prenom">Prenom: </label><input id="prenom" type="text" name="prenom" value="" required>
+                <label for="sexeHomme">Sexe: </label><input id="sexeHomme" type="radio" name="sexe" value="homme"
+                    required><label for="sexeHomme">H</label>
+                <input id="sexeFemme" type="radio" name="sexe" value="femme"><label for="sexeFemme">F</label>
+                <label for="email"> Email: </label><input id="email" type="email" name="email" value="" required><br>
+                <label for="message">Message: </label><br><textarea id="message" rows="5" cols="50"
+                    required></textarea><br>
+                <input class="bouton" type="submit" value="Envoyer">
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
