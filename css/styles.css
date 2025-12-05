@@ -1,3 +1,10 @@
+.navbar {
+    background-color: #D4AF3799;
+    border: 0.15em solid #D4AF37;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 25px;
+}
 .shape {
     font-family: "IBM Plex Sans", sans-serif;
     font-style: normal;
