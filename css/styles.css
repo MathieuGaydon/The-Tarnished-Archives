@@ -1,9 +1,73 @@
+body{
+    background-color: #292929;
+    padding-top: 6em;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 10%);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 2% auto 0 5%;
+    gap: 1.5rem;
+}
+.navbarText {
+    background-color: #D4AF3799;
+    border: 0.15em solid #D4AF37;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    padding:0 3rem;
+    border-radius: 20px;
+    flex: 1;
+}
+.navbarText a{
+    color: #E8E6E3;
+    text-decoration: none;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-style: normal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbarText a:hover{
+    text-decoration: underline;
+}
+
+.navbarTheme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    padding: 0 1rem;
+    background-color: #D4AF3799;
+    border: 0.15em solid #D4AF37;
+    border-radius: 20px;
+}
+.navbarTheme img{
+    width: 80%;
+    height: auto;
+}
+.hero{
+    border: 0.05em solid #D4AF37cc;
+    margin: 5%;
+    padding: 2%;
+    border-radius: 20px;
+    background-color:#0D0B08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .shape {
     font-family: "IBM Plex Sans", sans-serif;
     font-style: normal;
     border: 0.15em solid #D4AF37cc;
     margin: 5%;
-    padding: 2%;
+    padding: 1% 2% 2% 2%;
     border-radius: 20px;
     background: linear-gradient(to bottom, #0D0B08 42%, #C4C0C0 42%);
 }
@@ -19,6 +83,7 @@ h2{
     font-family: "Space Grotesk", sans-serif;
     font-style: normal;
     color: #B8924F;
+    font-size: 2em;
 }
 p {
     color:#E8E6E3;
@@ -30,7 +95,7 @@ h1 {
     font-style: normal;
     color: #D4AF37;
     text-align:center;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 label {
