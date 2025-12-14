@@ -4,8 +4,10 @@
 <head>
     <title>The-Tarnished-Archives</title>
     <meta charset="utf-8">
+    <meta name="description"
+        content="The Tarnished Archives présente l'histoire et l'univer du studio et des jeux FromSoftWare">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="icon" href="assets/img/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,7 +18,7 @@
 <body>
     <div class="navbar">
         <div class="navbarText">
-            <a href="#acceuil">Acceuil</a>
+            <a href="#accueil">Accueil</a>
             <a href="#catalogue">Catalogue</a>
             <a href="#studio">Studio</a>
             <a href="#medias">Médias</a>
@@ -26,34 +28,178 @@
             <img src="assets/img/sword.png" alt="sword icon">
         </div>
     </div>
-    <div class="hero" id="acceuil">
-        <h1>The Tarnished Archives</h1>
-        <h2>La Saga FromSoftware</h2>
-        <p>Découvrez la magie et les défis de chaque jeux FromSoftWare</p>
-    </div>
-    <h1 class="shapeTitle" id="catalogue">Catalogue</h1>
-    <h1 class="shapeTitle" id="studio">Studio</h1>
-    <h1 class="shapeTitle" id="medias">Média</h1>
-    <h1 class="shapeTitle" id="contact">Contact</h1>
-    <div class="shape">
-        <form id="form" action="mailto:seaurchin503@emailhub.kr?content-type=text/html&amp;subject=Site%20Web"
-            method="post" enctype="text/plain">
-            <h2> Nous contacté </h2>
-            <p> Si vous souhaitez nous faire part de votre avis ou nous contacté, veuillez remplir le formulaire
-                ci-dessous</p>
-            <p>
-                <label for="nom">Nom: </label><input id="nom" type="text" name="nom" value="" required>
-                <label for="prenom">Prenom: </label><input id="prenom" type="text" name="prenom" value="" required>
-                <label for="sexeHomme">Sexe: </label><input id="sexeHomme" type="radio" name="sexe" value="homme"
-                    required><label for="sexeHomme">H</label>
-                <input id="sexeFemme" type="radio" name="sexe" value="femme"><label for="sexeFemme">F</label>
-                <label for="email"> Email: </label><input id="email" type="email" name="email" value="" required><br>
-                <label for="message">Message: </label><br><textarea id="message" rows="5" cols="50"
-                    required></textarea><br>
-                <input class="bouton" type="submit" value="Envoyer">
-            </p>
-        </form>
-    </div>
+    <main>
+        <div class="hero" id="accueil">
+            <h1>The Tarnished Archives</h1>
+            <h2>La Saga FromSoftware</h2>
+            <p>Découvrez la magie et les défis de chaque jeux FromSoftWare</p>
+        </div>
+        <h1 class="shapeTitle" id="catalogue">Catalogue</h1>
+        <div class="shape">
+            <section id="timeline">
+                <ul>
+                    <li>
+                        <div class="timelineItem">
+                            <div class="timelineLeft">
+                                <h2>Demon’s Souls</h2>
+                                <img src="assets/img/demons_souls.webp" alt="Demon's souls cover">
+                            </div>
+                            <div class="timelineCenter">
+                                <span class="timelineYear">2009</span>
+                            </div>
+                            <div class="timelineRight">
+                                <p>Dans sa quête de pouvoir, le 12e roi de Boletaria, le roi Allant, s'appropria les
+                                    anciens
+                                    arts de l'âme, réveillant ainsi un démon aussi vieux que le monde, l'Ancien. Une
+                                    épaisse
+                                    brume et des créatures cauchemardesques ayant soif d'âmes humaines envahirent la
+                                    région
+                                    suite au réveil de l'Ancien.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timelineItem">
+                            <div class="timelineLeft">
+                                <p>Dans Dark Souls, on joue un mort-vivant marqué par le Signe Sombre, condamné à notre
+                                    perdre
+                                    peu à peu son humanité dans un monde qui s'effondre. Attiré jusqu'au royaume brisé
+                                    de Lordan, on doit traverser des lieux hostiles, affronter des seigneurs déchus et
+                                    comprendre le rôle de la Flamme primordiale. Au bout du chemin, c'est à nous de
+                                    décider si l'Âge du Feu doit continuer encore un peu... ou laisser place aux
+                                    Ténèbres.</p>
+                            </div>
+                            <div class="timelineCenter">
+                                <span class="timelineYear">2011</span>
+                            </div>
+                            <div class="timelineRight">
+                                <h2>Dark Souls</h2>
+                                <img src="assets/img/dark_souls_I.webp" alt="Dark souls cover">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timelineItem">
+                            <div class="timelineLeft">
+                                <h2>Dark Souls II</h2>
+                                <img src="assets/img/dark_souls_II.webp" alt="Dark souls 2 cover">
+                            </div>
+                            <div class="timelineCenter">
+                                <span class="timelineYear">2014</span>
+                            </div>
+                            <div class="timelineRight">
+                                <p>Dans Dark Souls II, on incarne un être maudit qui rejoint Dragleic pour tenter de se
+                                    libérer de notre malédiction. On découvre un royaume ravagé, hanté par les erreurs
+                                    du roi et par âmes anciennes qui refusent de disparaître.De combat en combat, on
+                                    s'approche du coeur de Drangleic et d'un choix difficile face au cycle sans fin de
+                                    ruine et de renaissance.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timelineItem">
+                            <div class="timelineLeft">
+                                <p>Dans Bloodborne, on incarne un Chasseur qui arrive à Yharnam, une ville malade où les
+                                    habitants se transforment peu à peu en bêtes. Au fil d'une nuit qui vire au
+                                    cauchemar, on remonte les rues sombres, les cathédrales abandonnées et des
+                                    dimensions plus étranges encore.En cherchant la source du "remède" et de la chasse,
+                                    on se trouve face à des horreurs cosmiques et à la vraie nature du rêve dont on doit
+                                    s'éveiller.</p>
+                            </div>
+                            <div class="timelineCenter">
+                                <span class="timelineYear">2015</span>
+                            </div>
+                            <div class="timelineRight">
+                                <h2>Bloodborne</h2>
+                                <img src="assets/img/Bloodborne.webp" alt="Bloodborne cover">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timelineItem">
+                            <div class="timelineLeft">
+                                <h2>Dark Souls III</h2>
+                                <img src="assets/img/dark_souls_iii.webp" alt="Dark souls 3 cover">
+                            </div>
+                            <div class="timelineCenter">
+                                <span class="timelineYear">2016</span>
+                            </div>
+                            <div class="timelineRight">
+                                <p>Dans Dark Souls III, on joue un Mort-vivant sans braise, réveillé alors que la FLamme
+                                    fondatrice est sur le point de s'éteindre pour de bon. Notre mission est de ramener
+                                    de
+                                    force les seigneurs des Cendres sur leur trône pour raviver le feu une dernière
+                                    fois. En traversant un monde où les âges passés se mélangent et se meurent, nous
+                                    devrons
+                                    décider quoi faire de cette flamme qui ne veut plus brûler.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timelineItem">
+                            <div class="timelineLeft">
+                                <p>Dans Sekiro: Shadows Die Twice, vous incarnez le « loup a un bras », un guerrier
+                                    déshonoré et défiguré sauvé de la mort. Chargé de protéger un jeune seigneur
+                                    descendant d'une ancienne lignée, vous devenez la cible de nombreux ennemis vicieux,
+                                    dont le dangereux clan Ashina. Lorsque le jeune seigneur est capturé, rien ne vous
+                                    arrêtera dans votre périlleuse quête pour restaurer votre honneur, pas même la mort.
+                                </p>
+                            </div>
+                            <div class="timelineCenter">
+                                <span class="timelineYear">2019</span>
+                            </div>
+                            <div class="timelineRight">
+                                <h2>Sekiro : Shadow Die Twice</h2>
+                                <img src="assets/img/sekiro_shadows_die_twice.webp" alt="Sekiro cover">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timelineItem">
+                            <div class="timelineLeft">
+                                <h2>Elden ring</h2>
+                                <img src="assets/img/elden_ring.webp" alt="Elden ring cover">
+                            </div>
+                            <div class="timelineCenter">
+                                <span class="timelineYear">2022</span>
+                            </div>
+                            <div class="timelineRight">
+                                <p>Dans Elden Ring, on joue un Sans-éclat, un exilé rappelé dans l'Entre-terre après
+                                    l'explosion du Cercle d'Elden. Libre de voyage à cheval à travers plaines, marais,
+                                    châteaux et capitales en ruines, il affronte des demi-dieux prêts à tout pour garder
+                                    leurs fragment de pouvoir. Au fil de l'aventure, on gagne en force et finit par
+                                    décider du nouveau visage de l'Entre-terre, en suivant l'Ordre établi ou en le
+                                    brisant </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <h1 class="shapeTitle" id="studio">Studio</h1>
+        <h1 class="shapeTitle" id="medias">Médias</h1>
+        <h1 class="shapeTitle" id="contact">Contact</h1>
+        <div class="shapeForm">
+            <form id="form" action="mailto:seaurchin503@emailhub.kr?content-type=text/html&amp;subject=Site%20Web"
+                method="post" enctype="text/plain">
+                <h2> Nous contacter </h2>
+                <p> Si vous souhaitez nous faire part de votre avis ou nous contacter, veuillez remplir le formulaire
+                    ci-dessous</p>
+                <p>
+                    <label for="nom">Nom: </label><input id="nom" type="text" name="nom" value="" required>
+                    <label for="prenom">Prenom: </label><input id="prenom" type="text" name="prenom" value="" required>
+                    <span>Sexe: </span><input id="sexeHomme" type="radio" name="sexe" value="homme" required><label
+                        for="sexeHomme">Homme</label>
+                    <input id="sexeFemme" type="radio" name="sexe" value="femme"><label for="sexeFemme">Femme</label>
+                    <label for="email"> Email: </label><input id="email" type="email" name="email" value=""
+                        required><br>
+                    <label for="message">Message: </label><br><textarea id="message" rows="5" cols="50"
+                        required></textarea><br>
+                    <input class="bouton" type="submit" value="Envoyer">
+                </p>
+            </form>
+        </div>
+    </main>
 </body>
 
 </html>
