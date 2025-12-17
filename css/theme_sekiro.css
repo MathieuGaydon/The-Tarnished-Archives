@@ -1,0 +1,395 @@
+body{
+  background-color: #292929;
+  padding-top: 6em;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7em;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3D0C0C;
+  border-bottom: 0.15em solid #C41E3A;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.navbarText {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 4rem;
+  flex: 1;
+  max-width: 1200px;
+}
+
+.navbarText a{
+  color: #E8E6E3;
+  text-decoration: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbarText a:hover{
+  text-decoration: underline;
+}
+
+.navbarTheme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  padding: 0 1rem;
+  border-radius: 20px;
+}
+
+.navbarTheme img{
+  width: 32px;
+  height: 32px;
+}
+
+.sword{
+  display: none;
+}
+
+.hero{
+  border: 0.05em solid #C41E3A ;
+  margin: 5%;
+  padding: 2%;
+  border-radius: 20px;
+  background-color:#0D0B08;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shape{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  border: 0.15em solid #C41E3A ;
+  margin: 5%;
+  padding: 1% 2% 2% 2%;
+  border-radius: 20px;
+  background: #0D0B08;
+}
+
+#timeline{
+  padding: 40px 0 60px 0;
+}
+
+#timeline ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.timelineItem{
+  background-color: #948C8C;
+  border: 0.15em solid #C41E3A ;
+  margin: 5%;
+  padding: 1% 2% 2% 2%;
+  border-radius: 20px;
+  background: #0D0B08;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+#darksouls, #bloodborne, #sekiro {
+  flex-direction: column-reverse;
+}
+
+.timelineCenter{
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timelineLeft h2,
+.timelineRight h2{
+  margin-bottom: 10px;
+}
+
+.timelineLeft img,
+.timelineRight img{
+  display : block;
+  width: 180px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.timelineLeft p,
+.timelineRight p{
+  margin: 0;
+}
+
+.timelineLeft,
+.timelineRight{
+  text-align: left;
+}
+
+.studio {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-left: 1em;
+  margin-right: auto;
+}
+
+.studio img{
+  width: 90%;
+}
+
+.cover{
+  padding: 3em 0 3em 3em;
+}
+
+.studioTitle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.studioTitle img {
+  width: 15%;
+  padding-right: 5em;
+}
+
+.studioContent{
+  display: flex;
+  flex-direction: row;
+  margin-top: 3em ;
+  gap: 3em;
+}
+
+.studioHistoire, .studioCulture, .studioPDG {
+  background-color: #141414;
+  border-radius: 25px;
+}
+
+.studioHistoire{
+  display: flex;
+  flex-direction: column ;
+}
+
+.studioHistoire img {
+  width: 50%;
+  height: auto;
+  margin: 1em;
+  border-radius: 10px;
+}
+
+.studioCulture img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin: 1em;
+  border-radius: 10px;
+}
+
+.studioHistoire p, .studioCulture p, .studioPDG p {
+  padding: 1.5em;
+  margin: auto;
+}
+.studioHistoireTitle, .studioCultureTitle{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.studioPDG{
+  margin-top: 3em;
+}
+
+.studioPDG h2{
+  padding-left: 0.7em;
+}
+
+.studio .bouton{
+  margin-top: 3em;
+  max-width: 20%;
+  display: flex;
+  justify-content: center;
+  margin-left: 39em;
+}
+.studio .bouton a{
+  color: #E8E6E3;
+  text-decoration: none;
+}
+
+.studio .bouton a:hover{
+  text-decoration: underline;
+}
+
+.shapeForm, .shapeVid {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  border: 0.15em solid #C41E3A ;
+  margin: 5%;
+  padding: 1% 2% 2% 2%;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #0D0B08 42%, #C4C0C0 42%);
+}
+
+.shapeVid{
+  display: flex;
+  flex-direction: column;
+}
+
+.shapeVid h2, a{
+  margin-left: 1em;
+}
+.shapeVid a {
+  color: #E8E6E3;
+  text-decoration: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+  margin-left: 2.5em;
+}
+
+.shapeVid a:hover{
+  text-decoration: underline;
+}
+
+.shapeVid video{
+  margin-top: 2em;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  
+}
+
+.shapeTitle {
+  border: 0.05em solid #C41E3A ;
+  color: #DC143C ;
+  margin: 5%;
+  padding: 2%;
+  border-radius: 20px;
+  text-align:center;
+  font-size: 4rem;
+  background-color:#0D0B08;
+}
+h2{
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  color: #CD5C5C;
+  font-size: 2em;
+}
+
+p {
+  color:#F5E6E8 ;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Russo One", sans-serif;
+  font-style: normal;
+  color: #DC143C ;
+  text-align:center;
+  font-size: 4rem;
+}
+
+#timeline span{
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  color: #CD5C5C;
+  font-size: 2em;
+}
+
+label {
+  color:#E8E6E3;
+  margin: 1%;
+}
+
+input {
+  border-radius: 100px;
+  border: 0.15em solid #C41E3A ;
+  padding: 1%;
+  margin: 1%;
+  box-sizing: border-box;
+}
+
+textarea{
+  border-radius: 20px;
+  border: 0.15em solid #C41E3A ;
+  padding: 1%;
+  width: 100%;
+  margin: 1%;
+  box-sizing: border-box;
+}
+
+.bouton {
+  border-radius: 10px;
+  border: 0.15em solid #C41E3A ;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color:#B22222 ;
+  opacity: 70%;
+  font-size: 1rem;
+}
+
+.bouton:hover {
+  opacity: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.scrollTop{
+  position: fixed;
+  right: 2em;
+  bottom: 2em;
+  width: 56px;
+  height: 56px;
+  background-color: #B22222;
+  border: 0.15em solid #C41E3A ;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100001;
+  text-decoration: none;
+}
+
+.arrow{
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+
+.arrow::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 12px;
+  background: #ffffff;
+}
+
+.arrow::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #ffffff;
+}
