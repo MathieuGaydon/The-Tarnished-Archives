@@ -1,10 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+    //Sélectionne le bouton de thème et le lien du CSS
     const themeBtn = document.querySelector('.navbarTheme');
     const cssLink = document.querySelector('link[href="css/styles.css"]');
+    //Charge le thème sauvegardé
     let savedTheme = localStorage.getItem('currentTheme') || 'styles';
     if (savedTheme === 'sekiro' && cssLink) {
         cssLink.href = 'css/theme_sekiro.css?v=' + Date.now();
     }
+    //Au clic change de thème
     themeBtn.addEventListener('click', () => {
         if (!cssLink) return;
         if (cssLink.href.includes('theme_sekiro.css')) {
@@ -15,13 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('currentTheme', 'sekiro');
         }
     });
+    //Curseur indique clicable
     themeBtn.style.cursor ='pointer';
 });
 
 document.addEventListener('DOMContentLoaded', () =>{
+    //séquence konami code
     const konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
     let konamiCodePosition = 0;
     document.addEventListener('keydown', (e) => {
+        //Vérifie si la séquence correspond
         if(e.keyCode === konamiCode[konamiCodePosition]) {
             konamiCodePosition++;
             if (konamiCodePosition === konamiCode.length) {
@@ -29,11 +35,13 @@ document.addEventListener('DOMContentLoaded', () =>{
                 konamiCodePosition = 0 ;
             }
         } else {
+            //touche fausse on reset la position
             konamiCodePosition = 0;
         }
     });
 
     function showYoutubePopup(){
+        //overlay de la pop-up
         const overlay = document.createElement('div');
         overlay.className ='konamiOverlay';
         const popup = document.createElement('div');
@@ -44,11 +52,13 @@ document.addEventListener('DOMContentLoaded', () =>{
         document.body.appendChild(overlay);
         document.body.appendChild(popup);
 
+        //Bouton fermer
         const  closeBtn = popup.querySelector('.konamiClose');
         closeBtn.addEventListener('click', () =>{
             popup.remove();
             overlay.remove();
         });
+        //Clic overlay, ferme aussi
         overlay.addEventListener('click', () =>{
             popup.remove();
             overlay.remove();

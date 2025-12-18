@@ -17,6 +17,7 @@
 
 <body id="top">
     <div class="navbar">
+        <!--Navbar-->
         <div class="navbarText">
             <a href="#accueil">Accueil</a>
             <a href="#catalogue">Catalogue</a>
@@ -24,22 +25,26 @@
             <a href="#medias">Médias</a>
             <a href="#contact">Contact</a>
         </div>
+        <!--Changement de thème-->
         <div class="navbarTheme">
             <img src="assets/img/sword.png" class="sword" alt="sword icon">
             <img src="assets/img/katana.png" class="katana" alt="katana icon">
         </div>
     </div>
     <main>
+        <!--Hero section-->
         <div class="hero" id="accueil">
             <h1>The Tarnished Archives</h1>
             <h2>La Saga FromSoftware</h2>
             <p>Découvrez la magie et les défis de chaque jeux FromSoftWare</p>
         </div>
+        <!--Catalogue-->
         <h2 class="shapeTitle" id="catalogue">Catalogue</h2>
         <div class="shape">
             <section id="timeline">
                 <ul>
                     <li>
+                        <!--Demon's Souls-->
                         <div class="timelineItem">
                             <div class="timelineLeft">
                                 <h2>Demon’s Souls</h2>
@@ -60,6 +65,7 @@
                         </div>
                     </li>
                     <li>
+                        <!--Dark Souls-->
                         <div class="timelineItem" id="darksouls">
                             <div class="timelineLeft">
                                 <p>Dans Dark Souls, on joue un mort-vivant marqué par le Signe Sombre, condamné à notre
@@ -80,6 +86,7 @@
                         </div>
                     </li>
                     <li>
+                        <!--Dark Souls II-->
                         <div class="timelineItem">
                             <div class="timelineLeft">
                                 <h2>Dark Souls II</h2>
@@ -98,6 +105,7 @@
                         </div>
                     </li>
                     <li>
+                        <!--Bloodborne-->
                         <div class="timelineItem" id="bloodborne">
                             <div class="timelineLeft">
                                 <p>Dans Bloodborne, on incarne un Chasseur qui arrive à Yharnam, une ville malade où les
@@ -117,6 +125,7 @@
                         </div>
                     </li>
                     <li>
+                        <!--Dark Souls III-->
                         <div class="timelineItem">
                             <div class="timelineLeft">
                                 <h2>Dark Souls III</h2>
@@ -137,6 +146,7 @@
                         </div>
                     </li>
                     <li>
+                        <!--Sekiro-->
                         <div class="timelineItem" id="sekiro">
                             <div class="timelineLeft">
                                 <p>Dans Sekiro: Shadows Die Twice, vous incarnez le « loup a un bras », un guerrier
@@ -156,6 +166,7 @@
                         </div>
                     </li>
                     <li>
+                        <!--Elden ring-->
                         <div class="timelineItem">
                             <div class="timelineLeft">
                                 <h2>Elden ring</h2>
@@ -177,8 +188,10 @@
                 </ul>
             </section>
         </div>
+        <!--Studio-->
         <h2 class="shapeTitle" id="studio">Studio</h2>
         <div class="shape">
+            <!--Title + logo-->
             <section class="studio">
                 <div class="studioTitle">
                     <img src="assets/img/fromsoftware_logo.webp" alt="FromSoftWare">
@@ -189,6 +202,7 @@
                     les
                     jeux Bloodborne (2015), Sekiro: Shadows Die Twice (2019) et Elden Ring (2022).</p>
                 <img src="assets/img/cover.webp" alt="magnifique image résumant l'histoire du studio" class="cover">
+                <!--Histoire + Culture + PDG contenue-->
                 <h2>Présentation de l'entreprise</h2>
                 <div class="studioContent">
                     <div class="studioHistoire">
@@ -265,6 +279,7 @@
                 </div>
             </section>
         </div>
+        <!--Médias-->
         <h2 class="shapeTitle" id="medias">Médias</h2>
         <div class="shapeVid">
             <div class="shapeHeader">
@@ -293,23 +308,15 @@
                 <source src="/assets/videos/trailer_sekiro.mp4" type=video/mp4>
             </video>
         </div>
-
-
+        <!--Formulaire-->
         <h2 class="shapeTitle" id="contact">Contact</h2>
         <div class="shapeForm">
-            <form id="form" action="mailto:seaurchin503@emailhub.kr?content-type=text/html&amp;subject=Site%20Web"
+            <form id="form" action="mailto:gaydonmathieu9@gmail.com?content-type=text/html&amp;subject=Site%20Web"
                 method="post" enctype="text/plain">
                 <h2> Nous contacter </h2>
                 <p> Si vous souhaitez nous faire part de votre avis ou nous contacter, veuillez remplir le formulaire
                     ci-dessous</p>
                 <p>
-                    <label for="nom">Nom: </label><input id="nom" type="text" name="nom" value="" required>
-                    <label for="prenom">Prenom: </label><input id="prenom" type="text" name="prenom" value="" required>
-                    <span>Sexe: </span><input id="sexeHomme" type="radio" name="sexe" value="homme" required><label
-                        for="sexeHomme">Homme</label>
-                    <input id="sexeFemme" type="radio" name="sexe" value="femme"><label for="sexeFemme">Femme</label>
-                    <label for="email"> Email: </label><input id="email" type="email" name="email" value=""
-                        required><br>
                     <label for="message">Message: </label><br><textarea id="message" rows="5" cols="50"
                         required></textarea><br>
                     <input class="bouton" type="submit" value="Envoyer">
@@ -317,6 +324,7 @@
             </form>
         </div>
     </main>
+    <!--Scroll Top bouton-->
     <a href="#top" class="scrollTop" aria-label="Remonter en haut de la page">
         <span class="arrow"></span>
     </a>
