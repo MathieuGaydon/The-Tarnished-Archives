@@ -457,3 +457,26 @@ textarea{
   background-color: #C41E3A;
   color: #F5E6E8;
 }
+
+/*Tablette*/
+@media screen and (max-width : 1300px) {
+  .studioContent{
+    flex-direction: column;
+  }
+
+  .studio .bouton {
+    margin: 2em auto;
+    max-width: 250px;
+    width: 100%;
+  }
+  .scrollTop{
+    right: 5.5%;
+  }
+}
+
+@media screen and (max-width : 800px){
+  .navbarText{
+    padding: 0 1em;
+    justify-content: flex-start;
+  }
+}

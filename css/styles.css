@@ -53,8 +53,8 @@ body{
 }
 
 .navbarTheme img{
-  width: 32px;
-  height: 32px;
+  width: 2em;
+  height: 2em;
 }
 
 .katana{
@@ -221,7 +221,7 @@ body{
 }
 
 .studioCulture img {
-  max-width: 400px;
+  max-width: 50%;
   width: 100%;
   height: auto;
   margin: 1em;
@@ -232,6 +232,7 @@ body{
   padding: 1.5em;
   margin: auto;
 }
+
 .studioHistoireTitle, .studioCultureTitle{
   display: flex;
   flex-direction: row-reverse;
@@ -254,7 +255,7 @@ body{
   margin-left: 39em;
 }
 .studio .bouton a{
-  color: #E8E6E3;
+  color: #0D0B08;
   text-decoration: none;
 }
 
@@ -322,6 +323,7 @@ p {
   font-family: "IBM Plex Sans", sans-serif;
   font-style: normal;
 }
+
 h1 {
   font-family: "Russo One", sans-serif;
   font-style: normal;
@@ -329,12 +331,14 @@ h1 {
   text-align:center;
   font-size: 4rem;
 }
+
 #timeline span{
   font-family: "Space Grotesk", sans-serif;
   font-style: normal;
   color: #B8924F;
   font-size: 2em;
 }
+
 label {
   color:#E8E6E3;
   margin: 1%;
@@ -483,4 +487,30 @@ textarea{
 .konamiClose:hover{
   background-color: #D4AF37;
   color: #0D0B08;
+}
+.burger {
+  display: none;
+}
+
+/*Tablette*/
+@media screen and (max-width : 1300px) {
+  .studioContent{
+    flex-direction: column;
+  }
+
+  .studio .bouton {
+    margin: 2em auto;
+    max-width: 250px;
+    width: 100%;
+  }
+  .scrollTop{
+    right: 5.5%;
+  }
+}
+
+@media screen and (max-width : 800px){
+  .navbarText{
+    padding: 0 1em;
+    justify-content: flex-start;
+  }
 }
